@@ -1,4 +1,36 @@
+.wrapper {
+  @apply text-white font-light;
+  background-color: #2ecc71;
+}
+
 .header {
-  @apply section-size h-80;
-  // background-color: #2ecc71;
+  @apply section relative;
+  padding-top: 24px;
+}
+
+.leftColumn {
+  @apply pb-44;
+  max-width: 520px;
+}
+
+.appIcon {
+  @apply w-20 mb-6 mt-36;
+}
+
+.heading {
+  font-size: 60px;
+}
+
+.desc {
+  @apply text-lg mb-10;
+}
+
+.stores {
+  @apply inline-grid gap-7;
+  grid-template-columns: repeat(2, auto);
+}
+
+.iphoneImg {
+  @apply absolute bottom-0 right-0 w-[400px];
+  padding-right: inherit;
 }

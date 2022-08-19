@@ -1,0 +1,10 @@
+.wrapper {
+}
+
+.nav {
+  @apply flex justify-between;
+}
+
+.links {
+  @apply inline-grid gap-6 grid-flow-col;
+}

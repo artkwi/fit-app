@@ -9,20 +9,44 @@
 }
 
 .leftColumn {
-  @apply pb-44;
-  max-width: 520px;
+  @apply text-center flex flex-col items-center pb-10;
+  @screen md {
+    @apply text-left pb-24 items-start;
+    max-width: 400px;
+  }
+
+  @screen lg {
+    @apply pb-44;
+  }
 }
 
 .appIcon {
-  @apply w-20 mb-6 mt-36;
+  @apply w-20 mb-6 mt-6;
+
+  @screen md {
+    @apply mt-20;
+  }
+
+  @screen lg {
+    @apply mt-36;
+  }
 }
 
 .heading {
-  font-size: 60px;
+  font-size: 32px;
+
+  @screen lg {
+    font-size: 60px;
+  }
 }
 
 .desc {
-  @apply text-lg mb-10;
+  @apply text-sm mb-10;
+  max-width: 300px;
+  @screen lg {
+    @apply text-lg;
+    max-width: auto;
+  }
 }
 
 .stores {
@@ -31,6 +55,14 @@
 }
 
 .iphoneImg {
-  @apply absolute bottom-0 right-0 w-[400px];
+  @apply hidden absolute bottom-0 right-0 w-[300px];
   padding-right: inherit;
+
+  @screen md {
+    @apply block;
+  }
+
+  @screen lg {
+    @apply w-[500px];
+  }
 }

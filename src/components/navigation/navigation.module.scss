@@ -6,5 +6,33 @@
 }
 
 .links {
-  @apply inline-grid gap-6 grid-flow-col;
+  @apply inline-grid gap-6 grid-flow-col items-center;
+}
+
+.link {
+  @apply relative overflow-hidden cursor-pointer;
+
+  &::after {
+    @apply w-full h-[2px] bg-white absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-150%, -50%);
+    transition: all 0.1s linear;
+  }
+  &:hover {
+    &::after {
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.linkSecondary {
+  @apply h-[42px] text-lg font-bold bg-white flex items-center rounded-3xl px-5 cursor-pointer border-2 border-white;
+  color: #2ecc71;
+  transition: all 0.1s linear;
+
+  &:hover {
+    @apply bg-transparent text-white;
+  }
 }

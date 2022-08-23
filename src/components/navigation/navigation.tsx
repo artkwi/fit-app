@@ -32,6 +32,14 @@ const Navigation = () => {
               {item.title}
             </a>
           ))}
+          <a
+            className={cls.linkSecondary}
+            href="https://play.google.com/store/apps/details?id=ws.mahesh.apps.randomgenerator&hl=en_US&gl=US"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Get App
+          </a>
         </div>
       </nav>
     </div>

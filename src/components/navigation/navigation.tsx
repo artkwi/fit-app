@@ -1,3 +1,4 @@
+import B from "../bold/bold";
 import logoImg from "./../../assets/images/logo.png";
 import cls from "./navigation.module.scss";
 
@@ -38,7 +39,7 @@ const Navigation = () => {
             target="_blank"
             rel="noreferrer"
           >
-            Get App
+            <B>Get App</B>
           </a>
         </div>
       </nav>

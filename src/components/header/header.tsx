@@ -4,6 +4,7 @@ import appStoreImg from "./../../assets/images/appstore.png";
 import googlePlayImg from "./../../assets/images/google_play.png";
 import iphoneTopImg from "./../../assets/images/iphone_top2.png";
 import Navigation from "../navigation/navigation";
+import B from "../bold/bold";
 
 const Header = () => {
   return (
@@ -13,7 +14,7 @@ const Header = () => {
         <div className={cls.leftColumn}>
           <img className={cls.appIcon} src={appIcon} alt="Fit App" />
           <h1 className={cls.heading}>
-            Helps you eat <b>better.</b>
+            Helps you eat <B>better.</B>
           </h1>
           <p className={cls.desc}>
             FitApp is a free calorie counting and diet app PSD template which
